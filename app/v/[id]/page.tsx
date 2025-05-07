@@ -58,11 +58,11 @@ export async function generateMetadata(
             title,
             description,
             images: [...previousOgImages, image],
-            url: `/v/${file.filecode}#${file.title}`,
+            url: `/v/${file.filecode}`,
             type: `article`,
         },
         alternates: {
-            canonical: `/v/${file.filecode}#${file.title}`,
+            canonical: `/v/${file.filecode}`,
         },
     };
 }
@@ -88,7 +88,7 @@ export default async function Video({ params }: PageProps) {
         name: `Bokep ${file.title}`,
         image: file.splash_img,
         description: `Video Bokep ${file.title} di ${SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral`,
-        url: `https://bokepsmppink.pages.dev/v/${file.filecode}#${file.title}`,
+        url: `https://bokepsmppink.pages.dev/v/${file.filecode}`,
         datePublished: new Date(
             file.uploaded + ".000Z"
         ).toISOString(),
@@ -108,7 +108,7 @@ export default async function Video({ params }: PageProps) {
         headline: `Bokep ${file.title}`,
         image: file.splash_img,
         description: `Video Bokep ${file.title} di ${SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral`,
-        url: `https://bokepsmppink.pages.dev/v/${file.filecode}#${file.title}`,
+        url: `https://bokepsmppink.pages.dev/v/${file.filecode}`,
         datePublished: new Date(
             file.uploaded + ".000Z"
         ).toISOString(),
@@ -125,7 +125,7 @@ export default async function Video({ params }: PageProps) {
                 userInteractionCount: `${file.views}`,
             interactionType: {
                 '@type': `ReadAction`,
-                target: `https://bokepsmppink.pages.dev/v/${file.filecode}#${file.title}`
+                target: `https://bokepsmppink.pages.dev/v/${file.filecode}`
             }  
         }
         }
@@ -137,7 +137,7 @@ export default async function Video({ params }: PageProps) {
 <meta itemProp="description" content={`Video Bokep ${file.title} di ${SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral`} />
 <meta itemProp="duration" content={`${file.length}`} />
 <meta itemProp="thumbnailUrl" content={`${file.splash_img}`} />
-<meta itemProp="embedURL" content={`https://doodstream.com/e/${file.filecode}#${file.title}`} />
+<meta itemProp="embedURL" content={`https://doodstream.com/e/${file.filecode}`} />
 <meta itemProp="uploadDate" content={`${new Date(
             file.uploaded + ".000Z"
         ).toISOString()}`} />
@@ -154,7 +154,7 @@ export default async function Video({ params }: PageProps) {
         {/* ... */}
         </section>
             <iframe
-                className="w-full h-[55vh] md:h-[55vh] lg:h-[70vh]"
+                className="w-full h-[90vh] md:h-[90vh] lg:h-[90vh]"
                 src={`https://doodstream.com/e/${file.filecode}`}
                 scrolling="no"
                 title={file.title}
