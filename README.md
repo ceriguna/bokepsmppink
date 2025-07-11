@@ -1,2 +1,1 @@
-# bokepsmppink
-bokepsmppink
+# [bokepsmppink](https://bokepsmppink.pages.dev)
